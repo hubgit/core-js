@@ -1927,8 +1927,6 @@ export const data = {
   },
   'esnext.array.unique-by': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.array.with': null,
   'esnext.array-buffer.detached': {
     chrome: '114',
   },
@@ -2561,7 +2559,6 @@ export const renamed = new Map([
   ['es.set', 'es.set.constructor'],
   ['es.weak-map', 'es.weak-map.constructor'],
   ['es.weak-set', 'es.weak-set.constructor'],
-  ['esnext.array.with', 'es.array.with'],
   ['esnext.global-this', 'es.global-this'],
   ['esnext.map.group-by', 'es.map.group-by'],
   ['esnext.object.has-own', 'es.object.has-own'],
