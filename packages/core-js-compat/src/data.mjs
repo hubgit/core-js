@@ -2104,9 +2104,6 @@ export const data = {
   },
   'esnext.set.difference.v2': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.set.difference': {
-  },
   'esnext.set.every': {
   },
   'esnext.set.filter': {
