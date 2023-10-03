@@ -2116,9 +2116,6 @@ export const data = {
   },
   'esnext.set.is-disjoint-from.v2': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.set.is-disjoint-from': {
-  },
   'esnext.set.is-subset-of.v2': {
   },
   // TODO: Remove from `core-js@4`
