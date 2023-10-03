@@ -2132,9 +2132,6 @@ export const data = {
   },
   'esnext.set.symmetric-difference.v2': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.set.symmetric-difference': {
-  },
   'esnext.set.union.v2': {
   },
   // TODO: Remove from `core-js@4`
