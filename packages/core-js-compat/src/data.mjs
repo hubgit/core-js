@@ -438,8 +438,6 @@ export const data = {
     rhino: '1.7.13',
     safari: '12.1',
   },
-  // TODO: Remove this module from `core-js@4` since it's replaced to module below
-  'es.data-view': null,
   'es.data-view.constructor': {
     chrome: '26',
     firefox: '15',
@@ -2398,7 +2396,6 @@ export const data = {
 
 export const renamed = new Map([
   // TODO: Clean in `core-js@4`
-  ['es.data-view', 'es.data-view.constructor'],
   ['es.map', 'es.map.constructor'],
   ['es.set', 'es.set.constructor'],
   ['es.weak-map', 'es.weak-map.constructor'],
@@ -2416,7 +2413,6 @@ export const dataWithIgnored = { ...data };
 
 export const ignored = [
   // TODO: Clean in `core-js@4`
-  'es.data-view.constructor',
   'es.map.constructor',
   'es.set.constructor',
   'es.string.trim-left',
