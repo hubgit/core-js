@@ -2114,9 +2114,6 @@ export const data = {
   },
   'esnext.set.intersection.v2': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.set.intersection': {
-  },
   'esnext.set.is-disjoint-from.v2': {
   },
   // TODO: Remove from `core-js@4`
