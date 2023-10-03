@@ -1937,9 +1937,6 @@ export const data = {
   },
   'esnext.async-iterator.to-array': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.bigint.range': {
-  },
   'esnext.composite-key': {
   },
   'esnext.composite-symbol': {
