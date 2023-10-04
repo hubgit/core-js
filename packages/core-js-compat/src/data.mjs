@@ -2090,7 +2090,7 @@ export const data = {
   },
   'esnext.set.delete-all': {
   },
-  'esnext.set.difference.v2': {
+  'esnext.set.difference': {
   },
   'esnext.set.every': {
   },
