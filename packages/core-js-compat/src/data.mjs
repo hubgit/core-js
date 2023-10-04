@@ -2104,7 +2104,7 @@ export const data = {
   },
   'esnext.set.is-disjoint-from': {
   },
-  'esnext.set.is-subset-of.v2': {
+  'esnext.set.is-subset-of': {
   },
   'esnext.set.is-superset-of.v2': {
   },
