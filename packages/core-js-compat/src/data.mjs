@@ -2102,7 +2102,7 @@ export const data = {
   },
   'esnext.set.intersection': {
   },
-  'esnext.set.is-disjoint-from.v2': {
+  'esnext.set.is-disjoint-from': {
   },
   'esnext.set.is-subset-of.v2': {
   },
