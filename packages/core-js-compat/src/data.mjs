@@ -2100,7 +2100,7 @@ export const data = {
   },
   'esnext.set.from': {
   },
-  'esnext.set.intersection.v2': {
+  'esnext.set.intersection': {
   },
   'esnext.set.is-disjoint-from.v2': {
   },
