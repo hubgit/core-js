@@ -2106,7 +2106,7 @@ export const data = {
   },
   'esnext.set.is-subset-of': {
   },
-  'esnext.set.is-superset-of.v2': {
+  'esnext.set.is-superset-of': {
   },
   'esnext.set.join': {
   },
