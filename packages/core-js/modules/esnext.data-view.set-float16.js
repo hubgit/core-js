@@ -18,5 +18,5 @@ $({ target: 'DataView', proto: true }, {
     var offset = toIndex(byteOffset);
     var bytes = packIEEE754(f16round(value), 10, 2);
     return setUint16(this, offset, bytes[1] << 8 | bytes[0], arguments.length > 2 ? arguments[2] : false);
-  }
+  },
 });

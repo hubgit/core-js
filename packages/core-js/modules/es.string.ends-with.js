@@ -34,5 +34,5 @@ $({ target: 'String', proto: true, forced: !MDN_POLYFILL_BUG && !CORRECT_IS_REGE
     return nativeEndsWith
       ? nativeEndsWith(that, search, end)
       : slice(that, end - search.length, end) === search;
-  }
+  },
 });

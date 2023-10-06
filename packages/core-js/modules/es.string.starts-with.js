@@ -32,5 +32,5 @@ $({ target: 'String', proto: true, forced: !MDN_POLYFILL_BUG && !CORRECT_IS_REGE
     return nativeStartsWith
       ? nativeStartsWith(that, search, index)
       : stringSlice(that, index, index + search.length) === search;
-  }
+  },
 });

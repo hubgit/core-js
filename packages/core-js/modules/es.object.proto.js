@@ -23,6 +23,6 @@ if (getPrototypeOf && setPrototypeOf && !(PROTO in ObjectPrototype)) try {
       var O = requireObjectCoercible(this);
       if (!isObject(proto) && proto !== null || !isObject(O)) return;
       setPrototypeOf(O, proto);
-    }
+    },
   });
 } catch (error) { /* empty */ }

@@ -11,5 +11,5 @@ $({ target: 'Promise', stat: true, forced: FORCED_PROMISE_CONSTRUCTOR }, {
     var capability = newPromiseCapabilityModule.f(this);
     call(capability.reject, undefined, r);
     return capability.promise;
-  }
+  },
 });

@@ -16,5 +16,5 @@ $({ global: true, enumerable: true, dontCallGetSet: true }, {
     aCallable(fn);
     var domain = IS_NODE && process.domain;
     microtask(domain ? domain.bind(fn) : fn);
-  }
+  },
 });

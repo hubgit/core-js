@@ -7,5 +7,5 @@ var IS_HTMLDDA = typeof documentAll == 'undefined' && documentAll !== undefined;
 
 module.exports = {
   all: documentAll,
-  IS_HTMLDDA: IS_HTMLDDA
+  IS_HTMLDDA: IS_HTMLDDA,
 };

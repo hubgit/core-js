@@ -16,5 +16,5 @@ $({ target: 'DataView', proto: true, forced: true }, {
     if (classof(this) !== 'DataView') throw new $TypeError('Incorrect receiver');
     var offset = toIndex(byteOffset);
     return setUint8(this, offset, toUint8Clamped(value));
-  }
+  },
 });

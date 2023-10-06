@@ -6,5 +6,5 @@ for (var index = 0; index < 64; index++) ctoi[itoc.charAt(index)] = index;
 
 module.exports = {
   itoc: itoc,
-  ctoi: ctoi
+  ctoi: ctoi,
 };

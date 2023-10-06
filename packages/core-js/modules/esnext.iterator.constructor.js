@@ -41,5 +41,5 @@ IteratorConstructor.prototype = IteratorPrototype;
 // `Iterator` constructor
 // https://github.com/tc39/proposal-iterator-helpers
 $({ global: true, constructor: true, forced: FORCED }, {
-  Iterator: IteratorConstructor
+  Iterator: IteratorConstructor,
 });
