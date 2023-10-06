@@ -4,7 +4,6 @@ var isObject = require('../internals/is-object');
 var toObject = require('../internals/to-object');
 var requireObjectCoercible = require('../internals/require-object-coercible');
 
-// eslint-disable-next-line es/no-object-getprototypeof -- safe
 var getPrototypeOf = Object.getPrototypeOf;
 // eslint-disable-next-line es/no-object-setprototypeof -- safe
 var setPrototypeOf = Object.setPrototypeOf;
@@ -13,7 +12,7 @@ var PROTO = '__proto__';
 
 // `Object.prototype.__proto__` accessor
 // https://tc39.es/ecma262/#sec-object.prototype.__proto__
-if (getPrototypeOf && setPrototypeOf && !(PROTO in ObjectPrototype)) try {
+if (setPrototypeOf && !(PROTO in ObjectPrototype)) try {
   defineBuiltInAccessor(ObjectPrototype, PROTO, {
     configurable: true,
     get: function __proto__() {
