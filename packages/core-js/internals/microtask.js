@@ -1,6 +1,6 @@
 'use strict';
 var global = require('../internals/global');
-var bind = require('../internals/function-bind-context');
+var bind = require('../internals/function-bind');
 var getOwnPropertyDescriptor = require('../internals/object-get-own-property-descriptor').f;
 var macrotask = require('../internals/task').set;
 var Queue = require('../internals/queue');
