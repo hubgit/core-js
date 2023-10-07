@@ -14,7 +14,6 @@ var toIndex = require('../internals/to-index');
 var fround = require('../internals/math-fround');
 var IEEE754 = require('../internals/ieee754');
 var setPrototypeOf = require('../internals/object-set-prototype-of');
-var getOwnPropertyNames = require('../internals/object-get-own-property-names').f;
 var arrayFill = require('../internals/array-fill');
 var arraySlice = require('../internals/array-slice-simple');
 var setToStringTag = require('../internals/set-to-string-tag');
@@ -39,6 +38,7 @@ var Array = global.Array;
 var RangeError = global.RangeError;
 var ObjectPrototype = Object.prototype;
 var getPrototypeOf = Object.getPrototypeOf;
+var getOwnPropertyNames = Object.getOwnPropertyNames;
 var fill = uncurryThis(arrayFill);
 var reverse = uncurryThis([].reverse);
 
