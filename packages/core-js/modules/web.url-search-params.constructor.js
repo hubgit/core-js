@@ -35,12 +35,10 @@ var setInternalState = InternalStateModule.set;
 var getInternalParamsState = InternalStateModule.getterFor(URL_SEARCH_PARAMS);
 var getInternalIteratorState = InternalStateModule.getterFor(URL_SEARCH_PARAMS_ITERATOR);
 var create = Object.create;
-// eslint-disable-next-line es/no-object-getownpropertydescriptor -- safe
-var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
 
 // Avoid NodeJS experimental warning
 var safeGetBuiltIn = function (name) {
-  var descriptor = getOwnPropertyDescriptor(global, name);
+  var descriptor = Object.getOwnPropertyDescriptor(global, name);
   return descriptor && descriptor.value;
 };
 

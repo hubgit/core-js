@@ -1,7 +1,6 @@
 'use strict';
 var global = require('../internals/global');
 var bind = require('../internals/function-bind');
-var getOwnPropertyDescriptor = require('../internals/object-get-own-property-descriptor').f;
 var macrotask = require('../internals/task').set;
 var Queue = require('../internals/queue');
 var IS_IOS = require('../internals/engine-is-ios');
@@ -14,7 +13,7 @@ var document = global.document;
 var process = global.process;
 var Promise = global.Promise;
 // Node.js 11 shows ExperimentalWarning on getting `queueMicrotask`
-var queueMicrotaskDescriptor = getOwnPropertyDescriptor(global, 'queueMicrotask');
+var queueMicrotaskDescriptor = Object.getOwnPropertyDescriptor(global, 'queueMicrotask');
 var microtask = queueMicrotaskDescriptor && queueMicrotaskDescriptor.value;
 var notify, toggle, node, promise, then;
 
