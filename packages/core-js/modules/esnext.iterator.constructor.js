@@ -29,6 +29,7 @@ var IteratorConstructor = function Iterator() {
 };
 
 if (!hasOwn(IteratorPrototype, TO_STRING_TAG)) {
+  // dependency: es.object.to-string
   createNonEnumerableProperty(IteratorPrototype, TO_STRING_TAG, 'Iterator');
 }
 

@@ -7,6 +7,7 @@ var packIEEE754 = require('../internals/ieee754').pack;
 var f16round = require('../internals/math-f16round');
 
 var $TypeError = TypeError;
+// dependency: es.data-view.constructor
 // eslint-disable-next-line es/no-typed-arrays -- safe
 var setUint16 = uncurryThis(DataView.prototype.setUint16);
 

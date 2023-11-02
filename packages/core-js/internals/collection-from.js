@@ -21,6 +21,9 @@ module.exports = function from(source /* , mapFn, thisArg */) {
   if (mapping) {
     n = 0;
     boundFunction = bind(mapFn, length > 2 ? arguments[2] : undefined);
+    // dependency: es.array.iterator
+    // dependency: es.string.iterator
+    // dependency: web.dom-collections.iterator
     iterate(source, function (nextItem) {
       call(push, array, boundFunction(nextItem, n++));
     });
