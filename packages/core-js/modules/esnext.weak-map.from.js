@@ -4,6 +4,7 @@ var from = require('../internals/collection-from');
 
 // `WeakMap.from` method
 // https://tc39.github.io/proposal-setmap-offrom/#sec-weakmap.from
+// dependency: es.weak-map.constructor
 $({ target: 'WeakMap', stat: true, forced: true }, {
   from: from,
 });
