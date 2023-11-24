@@ -8,7 +8,7 @@ var fails = require('../internals/fails');
 var toString = require('../internals/to-string');
 var hasOwn = require('../internals/has-own-property');
 var validateArgumentsLength = require('../internals/validate-arguments-length');
-var ctoi = require('../internals/base64-map').ctoi;
+var c2i = require('../internals/base64-map').c2i;
 
 var disallowed = /[^\d+/a-z]/i;
 var whitespaces = /[\t\n\f\r ]+/g;
@@ -59,8 +59,8 @@ $({ global: true, bind: true, enumerable: true, forced: FORCED }, {
       throw new (getBuiltIn('DOMException'))('The string is not correctly encoded', 'InvalidCharacterError');
     }
     while (chr = charAt(string, position++)) {
-      if (hasOwn(ctoi, chr)) {
-        bs = bc % 4 ? bs * 64 + ctoi[chr] : ctoi[chr];
+      if (hasOwn(c2i, chr)) {
+        bs = bc % 4 ? bs * 64 + c2i[chr] : c2i[chr];
         if (bc++ % 4) output += fromCharCode(255 & bs >> (-2 * bc & 6));
       }
     } return output;
