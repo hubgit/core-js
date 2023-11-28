@@ -1976,8 +1976,6 @@ export const data = {
   },
   'esnext.number.from-string': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.promise.with-resolvers': null,
   'esnext.regexp.escape': {
   },
   'esnext.set.add-all': {
@@ -2253,8 +2251,7 @@ export const data = {
 };
 
 export const renamed = new Map([
-  // TODO: Clean in `core-js@4`
-  ['esnext.promise.with-resolvers', 'es.promise.with-resolvers'],
+  // empty
 ]);
 
 for (const [old, nw] of renamed) data[old] = data[nw];
