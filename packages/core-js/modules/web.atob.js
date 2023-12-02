@@ -53,16 +53,16 @@ $({ global: true, bind: true, enumerable: true, forced: FORCED }, {
     var output = '';
     var position = 0;
     var bc = 0;
-    var chr, bs;
+    var char, bs;
     if (string.length % 4 === 0) {
       string = replace(string, finalEq, '');
     }
     if (string.length % 4 === 1 || exec(disallowed, string)) {
       throw new DOMException('The string is not correctly encoded', 'InvalidCharacterError');
     }
-    while (chr = charAt(string, position++)) {
-      if (hasOwn(ctoi, chr)) {
-        bs = bc % 4 ? bs * 64 + ctoi[chr] : ctoi[chr];
+    while (char = charAt(string, position++)) {
+      if (hasOwn(ctoi, char)) {
+        bs = bc % 4 ? bs * 64 + ctoi[char] : ctoi[char];
         if (bc++ % 4) output += fromCharCode(255 & bs >> (-2 * bc & 6));
       }
     } return output;
